@@ -134,7 +134,24 @@ app.layout = html.Div(style={'backgroundColor': '#111111', "border-width": "1px"
             html.Div(dcc.Graph(id="correlation-figure",
                                style={'font-family': 'verdana', 'display': 'center-block',
                                       'padding-left': '30px',
-                                      'padding-bottom': '30px'}))
+                                      'padding-bottom': '30px'})),
+            
+            html.P('Developed using information from Yahoo! Finance by:',
+                       style={'font-family': 'verdana', 'color': 'white', 'left': '4%',
+                            'position': 'relative', 'align': 'center',
+                              'vertical-align': 'middle', 'font-size': '12px', 'fontWeight': 'bold'}),
+            html.P('Israel Castillo   castillo.israelh@gmail.com',
+                       style={'font-family': 'verdana', 'color': 'white', 'left': '4%',
+                            'position': 'relative', 'align': 'center',
+                              'vertical-align': 'middle', 'font-size': '12px', 'fontWeight': 'bold'}),
+            html.P('Esteban Ortiz Tirado   esteban.otg@gmail.com',
+                       style={'font-family': 'verdana', 'color': 'white', 'left': '4%',
+                            'position': 'relative', 'align': 'center',
+                              'vertical-align': 'middle', 'font-size': '12px', 'fontWeight': 'bold'}),
+            html.P('PAP 4J05 - OPTIMIZACIÓN DE PROGRAMAS DE INVERSIÓN EN INTERMEDIARIOS FINANCIEROS, ITESO',
+                       style={'font-family': 'verdana', 'color': 'white', 'left': '4%',
+                            'position': 'relative', 'align': 'center',
+                              'vertical-align': 'middle', 'font-size': '10px'})
         ])
         ]),
         dcc.Tab(label='Tab Test', style=tab_style(), selected_style=selected_tab_style(), children=[])
