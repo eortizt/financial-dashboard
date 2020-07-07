@@ -22,7 +22,7 @@ def initializer_stock_analysis(input_value):
     indx = input_value
     ventana = 365 * 5  # User input, maybe
     tickers, historicos, closes = prices_from_index(indx, ventana)
-    #tickers, historicos, closes = update_prices(indx, ventana)
+    tickers, historicos, closes = update_prices(indx, ventana)
     if indx == 'MXX':
         mercado = closes['^' + indx]
         dividendos = dividend_download(tickers)
